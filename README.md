@@ -1,10 +1,12 @@
-# Scripts
+# Подключение скриптов: sync, async, defer
 
-Установите зависимости:
+Учебная задача о том, как браузер загружает и выполняет скрипты: встроенный, синхронный, `async` и `defer`.
 
-```
-npm install
-```
+**Решение:** [src/index.html](src/index.html): четыре способа подключения скрипта в одном документе.
+
+Стек: HTML, JavaScript, тесты Jest.
+
+## Условие задачи
 
 В файле `src/index.html` добавьте на страницу следующие скрипты:
 
@@ -18,6 +20,9 @@ document.body.append('inline');
 -   Внешний скрипт `src/scripts/async.js` с атрибутом async
 -   Внешний скрипт `src/scripts/defer.js` с атрибутом defer
 
-Проверить себя можно запустив команду `npm run test -- --watchAll`.
+## Запуск
 
-После выполнения задания создайте pull request с решением.
+```
+npm install
+npm run test
+```
